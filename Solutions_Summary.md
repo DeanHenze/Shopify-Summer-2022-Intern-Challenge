@@ -2,7 +2,8 @@
 
 ## Summary of Solutions
 
-**Question 1**: 
+###**Question 1**: 
+
 Given some sample data, write a program to answer the following:
 
 On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis. 
@@ -22,13 +23,14 @@ b.	What metric would you report for this dataset?
 **Each of these groups has a distinct MOV, and for each group the MOV and AOV agree well.**
 
 c.	What is its value?
-**
-Quick and easy solution: MOV = $284
-Longer solution:
-1) MOV = $284
-2) MOV = $51,450
-3) MOV = $704,000 
-**
+
+**Quick and easy solution: MOV = $284**
+
+**Longer solution:**
+**1) MOV = $284**
+**2) MOV = $51,450**
+**3) MOV = $704,000**
+
 
 Question 2: For this question you’ll need to use SQL. Follow this link to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
 
