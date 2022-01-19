@@ -17,9 +17,13 @@ b.	What metric would you report for this dataset?
 **The quick and easy solution is to use the median order value (MOV). It is not affected by a few outliers, and by inspection we see that the distribution of order amounts are fairly clustered around the MOV.**
 
 **A slightly longer solution is to find that the orders can be grouped into three categories (see supplementary .pynb file):**
+
 **1) Lower number of units sold, lower cost per sneaker.**
+
 **2) Lower number of units sold, higher cost per sneaker.**
+
 **3) Higher number of units sold, lower cost per sneaker.**
+
 **Each of these groups has a distinct MOV, and for each group the MOV and AOV agree well.**
 
 c.	What is its value?
@@ -27,27 +31,33 @@ c.	What is its value?
 **Quick and easy solution: MOV = $284**
 
 **Longer solution:**
+
 **1) MOV = $284**
+
 **2) MOV = $51,450**
+
 **3) MOV = $704,000**
 
 
-Question 2: For this question you’ll need to use SQL. Follow this link to access the data set required for the challenge. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
+### Question 2: 
+For this question you’ll need to use SQL. Please use queries to answer the following questions. Paste your queries along with your final numerical answers below.
 
-The following solutions use SQL Server/MS Access syntax.
+**My solutions use SQL Server/MS Access syntax.**
 
 a.	How many orders were shipped by Speedy Express in total?
 
-Result:
-54
+**Result:**
 
-Query:
+**54**
+
+**Query:**
+```
 SELECT COUNT(*)
 FROM Orders
 INNER JOIN Shippers
 ON Orders.ShipperID = Shippers.ShipperID
 WHERE Shippers.ShipperName = 'Speedy Express';
-
+```
 
 b.	What is the last name of the employee with the most orders?
 
