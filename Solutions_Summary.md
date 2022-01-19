@@ -2,7 +2,8 @@
 
 ## Summary of Solutions
 
-**Question 1**: Given some sample data, write a program to answer the following:
+**Question 1**: 
+Given some sample data, write a program to answer the following:
 
 On Shopify, we have exactly 100 sneaker shops, and each of these shops sells only one model of shoe. We want to do some analysis of the average order value (AOV). When we look at orders data over a 30 day window, we naively calculate an AOV of $3145.13. Given that we know these shops are selling sneakers, a relatively affordable item, something seems wrong with our analysis. 
 
@@ -12,13 +13,13 @@ a.	Think about what could be going wrong with our calculation. Think about a bet
 
 b.	What metric would you report for this dataset?
 
-**The quick and easy solution is to use the median order value (MOV). It is not affected by a few outliers, and by inspection we see that the distribution of order amounts are fairly clustered around the MOV.
+**The quick and easy solution is to use the median order value (MOV). It is not affected by a few outliers, and by inspection we see that the distribution of order amounts are fairly clustered around the MOV.**
 
-A slightly longer solution is to find that the orders can be grouped into three categories (see supplementary .pynb file):
-1) Lower number of units sold, lower cost per sneaker.
-2) Lower number of units sold, higher cost per sneaker.
-3) Higher number of units sold, lower cost per sneaker.
-Each of these groups has a distinct MOV, and for each group the MOV and AOV agree well.**
+**A slightly longer solution is to find that the orders can be grouped into three categories (see supplementary .pynb file):**
+**1) Lower number of units sold, lower cost per sneaker.**
+**2) Lower number of units sold, higher cost per sneaker.**
+**3) Higher number of units sold, lower cost per sneaker.**
+**Each of these groups has a distinct MOV, and for each group the MOV and AOV agree well.**
 
 c.	What is its value?
 **
