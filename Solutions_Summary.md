@@ -2,7 +2,7 @@
 
 ## Summary of Solutions
 
-###Question 1: 
+### Question 1: 
 
 Given some sample data, write a program to answer the following:
 
