@@ -80,11 +80,11 @@ c.	What product was ordered the most by customers in Germany?
 **Result: Boston Crab Meat**
 
 **Columns needed from specific tables:**
-**- Country, CustomerID columns in the ‘Customers’ table.**
-**- CustomerID, OrderID columns in the ‘Orders’ table.**
+- **Country, CustomerID columns in the ‘Customers’ table.**
+- **CustomerID, OrderID columns in the ‘Orders’ table.**
 **- OrderID, ProductID columns in the ‘OrderDetails’ table.**
 **- ProductID, ProductName columns in the ‘Products’ table.**
-
+```
 Query:
 SELECT TOP 1 Products.ProductName
 FROM (((Customers
@@ -95,3 +95,4 @@ INNER JOIN Products ON OrderDetails.ProductID = Products.ProductID
 WHERE Customers.Country = 'Germany'
 GROUP BY Products.ProductName
 ORDER BY SUM(OrderDetails.Quantity) DESC;
+```
