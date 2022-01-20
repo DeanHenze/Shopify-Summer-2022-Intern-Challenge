@@ -10,3 +10,7 @@ The questions have been copied and pasted here, and answers have been inserted i
 *Q1_Solution_Detailed.ipynb* :
 
 Detailed explanation with python code.
+
+*InternChallenge_Q1_Dataset.csv*
+
+Dataset for question 1.
