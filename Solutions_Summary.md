@@ -82,8 +82,8 @@ c.	What product was ordered the most by customers in Germany?
 **Columns needed from specific tables:**
 - **Country, CustomerID columns in the ‘Customers’ table.**
 - **CustomerID, OrderID columns in the ‘Orders’ table.**
-**- OrderID, ProductID columns in the ‘OrderDetails’ table.**
-**- ProductID, ProductName columns in the ‘Products’ table.**
+- **OrderID, ProductID columns in the ‘OrderDetails’ table.**
+- **ProductID, ProductName columns in the ‘Products’ table.**
 ```
 Query:
 SELECT TOP 1 Products.ProductName
