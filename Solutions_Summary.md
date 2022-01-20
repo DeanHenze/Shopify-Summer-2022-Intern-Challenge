@@ -84,8 +84,9 @@ c.	What product was ordered the most by customers in Germany?
 - **CustomerID, OrderID columns in the ‘Orders’ table.**
 - **OrderID, ProductID columns in the ‘OrderDetails’ table.**
 - **ProductID, ProductName columns in the ‘Products’ table.**
+
+**Query:**
 ```
-Query:
 SELECT TOP 1 Products.ProductName
 FROM (((Customers
 INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID)
