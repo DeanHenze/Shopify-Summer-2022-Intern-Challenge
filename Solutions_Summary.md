@@ -18,11 +18,11 @@ b.	What metric would you report for this dataset?
 
 **A slightly longer solution is to find that the orders can be grouped into three categories (see supplementary .pynb file):**
 
-**1) Lower number of units sold, lower cost per sneaker.**
+**group 1) Lower number of units sold, lower cost per sneaker.**
 
-**2) Lower number of units sold, higher cost per sneaker.**
+**group 2) Lower number of units sold, higher cost per sneaker.**
 
-**3) Higher number of units sold, lower cost per sneaker.**
+**group 3) Higher number of units sold, lower cost per sneaker.**
 
 **Each of these groups has a distinct MOV, and for each group the MOV and AOV agree well.**
 
@@ -32,11 +32,11 @@ c.	What is its value?
 
 **Longer solution:**
 
-**1) MOV = $284**
+**group 1) MOV = $284**
 
-**2) MOV = $51,450**
+**group 2) MOV = $51,450**
 
-**3) MOV = $704,000**
+**group 3) MOV = $704,000**
 
 
 ### Question 2: 
@@ -46,9 +46,7 @@ For this question you’ll need to use SQL. Please use queries to answer the fol
 
 a.	How many orders were shipped by Speedy Express in total?
 
-**Result:**
-
-**54**
+**Result: 54**
 
 **Query:**
 ```
@@ -61,10 +59,10 @@ WHERE Shippers.ShipperName = 'Speedy Express';
 
 b.	What is the last name of the employee with the most orders?
 
-Result:
-Peacock
+**Result: Peacock**
 
-Query:
+**Query:**
+```
 SELECT LastName
 FROM Employees
 WHERE EmployeeID = (
@@ -73,19 +71,19 @@ WHERE EmployeeID = (
 	GROUP BY EmployeeID
 	ORDER BY COUNT(*) DESC;
 	);
+```
 
 c.	What product was ordered the most by customers in Germany?
 
-I was unsure if the question referred to highest quantity bought or most orders placed. I chose to answer the former, although determining the latter can be done by replacing the SUM aggregate with COUNT on the ORDER BY statement (last row).
+**I was unsure if the question referred to highest quantity bought or most orders placed. I chose to answer the former, although determining the latter can be done by replacing the SUM aggregate with COUNT on the ORDER BY statement (last row).**
 
-Result:
-Boston Crab Meat
+**Result: Boston Crab Meat**
 
-Columns needed from specific tables:
-Country, CustomerID columns in the ‘Customers’ table.
-CustomerID, OrderID columns in the ‘Orders’ table.
-OrderID, ProductID columns in the ‘OrderDetails’ table.
-ProductID, ProductName columns in the ‘Products’ table.
+**Columns needed from specific tables:**
+**- Country, CustomerID columns in the ‘Customers’ table.**
+**- CustomerID, OrderID columns in the ‘Orders’ table.**
+**- OrderID, ProductID columns in the ‘OrderDetails’ table.**
+**- ProductID, ProductName columns in the ‘Products’ table.**
 
 Query:
 SELECT TOP 1 Products.ProductName
