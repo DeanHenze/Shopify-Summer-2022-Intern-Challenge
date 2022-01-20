@@ -5,7 +5,7 @@ My solutions to the Shopify Summer 2022 Intern Challenge questions.
 
 *Solutions_Summary.md* :
 
-The questions have been copied and pasted here, and answers have been inserted in bold. For question 1, a summary of my solution is included in this file, with a more detailed solution given in *Q1_Solution_Detailed.ipynb*. For question 2, the solutions and code have been fully inserted here.
+The questions have been copied and pasted here, and answers have been inserted in bold. For question 1, a summary of my solution is included in this file, with a more detailed solution given in *Q1_Solution_Detailed.ipynb*. For question 2, the solutions and code are included fully in this file.
 
 *Q1_Solution_Detailed.ipynb* :
 
